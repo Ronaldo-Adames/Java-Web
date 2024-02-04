@@ -65,11 +65,11 @@ public class ContatoController {
 	}
 	
 	@DeleteMapping("/contatos/{idContato}")
-	public ResponseEntity<?> delete(@PathVariable("idContato")	Long idContato){
+	public ResponseEntity<?> excluir(@PathVariable("idContato")	Long idContato){
 		Contato ct = existeContato(idContato);
 		if (ct != null) {
 		contatos.removeIf(contato -> contato.getId().equals(idContato));
-		return ResponseEntity.status(HttpStatus.OK).body(contatos);
+		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 		} else {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body( "Contato não encontrado");
 		}
