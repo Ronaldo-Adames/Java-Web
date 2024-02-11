@@ -17,7 +17,6 @@ INDEX VERSION 1.134+C:\Users\72527\Desktop\Aula4\.metadata\.plugins\org.eclipse.
 4032928702.index
 1102780752.index
 1467531321.index
-3828757865.index
 4274010057.index
 3708492313.index
 2122453638.index
