@@ -60,4 +60,4 @@ public class ContatoController {
 		}
 		return ResponseEntity.status(HttpStatus.OK).body(service.inserir(contato));
 	}
-}	
+}
